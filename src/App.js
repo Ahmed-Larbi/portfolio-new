@@ -4,8 +4,13 @@ import Navbar from './Navbar'
 import {AiFillLinkedin, AiFillGithub, AiFillInstagram, AiFillMail, AiFillEnvironment, AiFillPhone} from 'react-icons/ai'
 import alphamale from "../src/assets/alphamale.png"
 import radical from "../src/assets/radical.png"
+import tonedesigns from "../src/assets/Tonedesigns.png"
 
 function App() {
+  function redirect() {
+    window.location.replace('www.tonedesigns.org')
+  }
+
   return (
     <main className='px-8 md:px-20 lg:px-40'>
     
@@ -61,7 +66,7 @@ function App() {
 
     <section id='portfolio' className='mt-10'>
       <h1 className='text-xl font-medium'>Portfolio</h1>
-      <p className='mt-1 text-md'>Here are some projects that I have managed.</p>
+      <p className='mt-1 text-md'>Business Projects :-</p>
       <div className='w-full shadow-lg rounded-md px-4 py-5 flex flex-col items-center text-center gap-1'>
           <img src={alphamale} className='w-48' alt='gambar' />
           <h2 className='text-xl'>Alpha Male</h2>
@@ -84,8 +89,19 @@ function App() {
           <ul>
             <li>React (Redux)</li>
             <li>HTML & CSS(Bootstrap & Tailwind)</li>
-            <li>Python (Flask)</li>
           </ul>
+        </div>
+        <div className='w-full shadow-lg rounded-md px-4 py-5 flex flex-col items-center text-center gap-1'>
+          <img src={tonedesigns} className='w-60' alt='gambar' />
+          <h2 className='text-xl'>Tone Designs</h2>
+          <p className='text-gray-500'>Landing website for Tone designs INC.</p>
+          <p className='text-xl '>Tools I Use</p>
+          <ul>
+            <li>React (Redux)</li>
+            <li>HTML & CSS(Bootstrap & Tailwind)</li>
+            
+          </ul>
+          <button onClick={redirect}> Try </button>
         </div>
     </section>
 

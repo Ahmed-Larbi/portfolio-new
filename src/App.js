@@ -8,7 +8,7 @@ import tonedesigns from "../src/assets/Tonedesigns.png"
 
 function App() {
   function redirect() {
-    window.location.replace('www.tonedesigns.org')
+    window.location.href = 'https://www.tonedesigns.org'
   }
 
   return (
@@ -63,10 +63,9 @@ function App() {
       </div>
 
     </section>
-
-    <section id='portfolio' className='mt-10'>
-      <h1 className='text-xl font-medium'>Portfolio</h1>
-      <p className='mt-1 text-md'>Business Projects :-</p>
+    <h1 className='text-xl font-medium mt-10'>Portfolio</h1>
+    <p className='mt-1 text-md'>Business Projects :-</p>
+    <section id='portfolio' className='mt-10 flex flex-col md:flex-row gap-8'>
       <div className='w-full shadow-lg rounded-md px-4 py-5 flex flex-col items-center text-center gap-1'>
           <img src={alphamale} className='w-48' alt='gambar' />
           <h2 className='text-xl'>Alpha Male</h2>
@@ -101,7 +100,7 @@ function App() {
             <li>HTML & CSS(Bootstrap & Tailwind)</li>
             
           </ul>
-          <button onClick={redirect}> Try </button>
+          <button onClick={redirect} className="rounded"> Visit </button>
         </div>
     </section>
 

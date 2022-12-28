@@ -69,7 +69,7 @@ function App() {
           <p className='text-xl '>Tools I Use</p>
           <ul>
             <li>React (Redux)</li>
-            <li>HTML & CSS(Bootstrap & Tailwind)</li>
+            <li>HTML & CSS3(Bootstrap & Tailwind)</li>
             <li>NodeJS (Express)</li>
             <li>
               MongoDB
